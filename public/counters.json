@@ -1,0 +1,22 @@
+[
+    {
+        "id": "01",
+        "title": "Magazines ",
+        "digit": "45 "
+    },
+    {
+        "id": "02",
+        "title": "Editions Published",
+        "digit": "1345 "
+    },
+    {
+        "id": "03",
+        "title": "Sales Revenue",
+        "digit": "$12 Million"
+    },
+    {
+        "id": "04",
+        "title": "Regions",
+        "digit": "74 "
+    }
+]
