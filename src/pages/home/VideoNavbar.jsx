@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import logo from '../../src/assets/logo.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import wd from '../assets/wd.mp4';
-import { Autoplay } from 'swiper';
+import { useState } from "react";
+import logo from "../../assets/logo.jpg";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import wd from "../../assets/wd.mp4";
+import { Link } from "react-router-dom";
 
 const VideoNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,10 +22,9 @@ const VideoNavbar = () => {
         loop
       >
         <source src={wd} type="video/mp4" />
-   
       </video>
 
-        <nav className="mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-12 relative z-10 flex items-center justify-between px-4 py-4">
+      <nav className="mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-12 relative z-10 flex items-center justify-between px-4 py-4">
         <div className="text-white">
           <h1 className="text-3xl font-bold">
             <img className="h-8 w-36 mr-5" src={logo} alt="Your Logo" />
@@ -34,56 +32,57 @@ const VideoNavbar = () => {
         </div>
         <ul className="hidden lg:flex space-x-8 text-white">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/academics"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ACADEMICS
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/about-us"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ABOUT US
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/our-team"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               OUR TEAM
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/event"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               EVENTS
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/lunch-program"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               PARENTS
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/contact-us"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               CONTACT US
-            </a>
+            </Link>
           </li>
           <li>
             <a
-              href="/"
+              href="/https://www.facebook.com/libertylaunchacademy"
+              target="_blank"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               <i className="fab fa-facebook"></i>
@@ -91,19 +90,20 @@ const VideoNavbar = () => {
           </li>
           <li>
             <a
-              href="/"
+              href="/https://reactrouter.com/en/main/start/tutorial"
+              target="_blank"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/admission"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ADMISSION
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -142,52 +142,52 @@ const VideoNavbar = () => {
                 <div>
                   <ul className="space-y-4">
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/academics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ACADEMICS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/about-us"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ABOUT US
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/our-team"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         OUR TEAM
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/event"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         EVENTS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/lunch-program"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         PARENTS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/contact-us"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         CONTACT US
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

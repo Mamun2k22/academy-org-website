@@ -1,10 +1,5 @@
-
-const academics = () => {
-    return (
-        <div>
-            this is academics page
-        </div>
-    );
+const Academics = () => {
+  return <div>this is academics page</div>;
 };
 
-export default academics;
+export default Academics;
