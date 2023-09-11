@@ -14,9 +14,9 @@ const VideoNavbar = () => {
   };
 
   return (
-    <div className="relativ">
+    <div className="relative h-screen">
       <video
-        className="min-w-full min-h-screen object-cover fixed z-0"
+        className="min-w-full max-h-screen object-cover absolute z-0"
         autoPlay
         muted
         loop
