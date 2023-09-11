@@ -17,6 +17,7 @@ const VideoNavbar = () => {
     <div className="relativ">
       
       <div className="overlay">
+        
       <video
         className="min-w-full min-h-screen object-cover fixed z-0"
         autoPlay
@@ -33,9 +34,9 @@ const VideoNavbar = () => {
         <h1 className="text-3xl font-bold ">Disrupting Education for Good</h1>
         <p className="mt-4 text-xl">Calling youth athletes, entrepreneurs, and innovators! Liberty Launch Academy is a forge for the next generation of principled leaders who will rise above the status quo, thrive, and make the difference that the world needs.</p>
         
-        <div className="mt-4 space-x-2">
+        <div className="mt-4 space-x-4">
           <button className="bg-red-600 text-white py-2 px-4 rounded-3xl hover:bg-teal-accent-500">
-            Apply Now
+            Application Details
           </button>
           <button className="bg-gray-600 text-white py-2 px-4 rounded-3xl hover:bg-gray-700">
             Learn More
