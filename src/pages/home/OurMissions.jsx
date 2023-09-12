@@ -80,8 +80,20 @@ const OurMissions = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-            
+            </div>
+
+            <div className='justify-center'>
+                <h1 className="text-black font-sans lg:px-72 w-11/12 lg:mx-0 text-[27px] text-center mx-4 mt-8">By providing a nurturing, values-driven environment with individualized attention, we aim to empower your child to thrive and succeed in all aspects of life.</h1>
+                
+            <div className="flex flex-col lg:justify-center items-center sm:flex-row sm:space-x-2 mt-6 gap-6">
+              <button className="bg-red-600 text-white py-2 px-4 rounded-3xl hover:bg-teal-accent-500">
+                View Application Process
+              </button>
+              <button className=" hover:text-white text-red-600 py-2 px-4 rounded-3xl hover:bg-red-600 border-2 border-red-400">
+                Contact us for more info
+              </button>
+            </div>
+            </div>
         </div>
     );
 };
