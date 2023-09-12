@@ -6,7 +6,7 @@ export const Home = () => {
     <div>
       <VideoNavbar />
       <OurMissions />
-      <div className="md:px-18 lg:px-12 bg-[#1d3767]">
+      <div className="md:px-18 lg:px-12 bg-[#1d3767] mt-10">
         <Academics />
       </div>
     </div>
