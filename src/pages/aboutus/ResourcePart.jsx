@@ -78,7 +78,7 @@ const ResourcePart = () => {
             ))}
             </div>
 
-            <div className='border-[1px] border-y-stone-300'>
+            <div className='border-[1px] border-y-stone-300 mx-10'>
 
             </div>
         </div>
