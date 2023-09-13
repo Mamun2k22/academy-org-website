@@ -1,7 +1,12 @@
+
+import About from "./About";
+import ResourcePart from "./ResourcePart";
+
 const AboutUs = () => {
   return (
     <div>
-      <h2>this is about us page</h2>
+      <About></About>
+      <ResourcePart></ResourcePart>
     </div>
   );
 };

@@ -1,9 +1,11 @@
-const LunchProgram = () => {
+import React from 'react';
+
+function LunchProgram() {
   return (
-    <div>
-      <h2>this is LunchProgram page</h2>
+    <div className="bg-gray-200 min-h-screen flex justify-center items-center">
+    
     </div>
   );
-};
+}
 
 export default LunchProgram;
