@@ -1,7 +1,15 @@
+import Article from "../../components/aboutUsComponents/article";
+import ParentStories from "../../components/aboutUsComponents/parentStories";
+
 const AboutUs = () => {
   return (
     <div>
-      <h2>this is about us page</h2>
+      <div>
+        <ParentStories />
+      </div>
+      <div>
+        <Article />
+      </div>
     </div>
   );
 };
