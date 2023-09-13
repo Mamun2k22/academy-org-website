@@ -11,7 +11,7 @@ export const Home = () => {
       <div className="md:px-18 lg:px-12 mt-10">
         <AboutUs />
       </div>
-      <div className="md:px-18 lg:px-12 bg-[#1d3767] mt-10">
+      <div className=" mt-10">
         <Academics />
       </div>
     </div>
