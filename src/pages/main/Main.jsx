@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import VideoNavbar from "../home/VideoNavbar";
 import Footer from "../../shared/footer";
+import Navbar from "../../shared/Navbar";
 
 export const Main = () => {
   return (
     <div>
-      <VideoNavbar />
+      <Navbar />
       <div className="">
         <Outlet />
       </div>

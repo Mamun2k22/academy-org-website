@@ -1,14 +1,7 @@
-import { useState } from "react";
-import logo from "../../assets/logo.jpg";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import wd from "../../assets/wd.mp4";
-
-import * as scroll from "react-scroll";
+import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
-
-const VideoNavbar = () => {
+import { useState } from "react";
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -16,72 +9,29 @@ const VideoNavbar = () => {
   };
 
   return (
-    <div className="relative h-screen">
-      <div className="overlay">
-        <video
-          className="min-w-full h-screen object-cover absolute z-0"
-          autoPlay
-          muted
-          loop
-        >
-          <source src={wd} type="video/mp4" />
-        </video>
-
-        <div className="flex absolute lg:top-64">
-          <div className="text-left text-white mt-16 lg:w-1/2 w-full px-6 lg:mx-20">
-            <h1 className="text-3xl font-bold ">
-              Disrupting Education for Good
-            </h1>
-            <p className="mt-4 text-xl">
-              Calling youth athletes, entrepreneurs, and innovators! Liberty
-              Launch Academy is a forge for the next generation of principled
-              leaders who will rise above the status quo, thrive, and make the
-              difference that the world needs.
-            </p>
-
-            <div className="mt-4 space-x-2">
-              <button className="bg-red-600 text-white py-2 px-4 rounded-3xl hover:bg-teal-accent-500">
-                Application Details
-              </button>
-              <button className="bg-gray-600 text-white py-2 px-4 rounded-3xl hover:bg-gray-700">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Navbar */}
+    <div>
       <nav className="mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-12 relative z-10 flex items-center justify-between px-4 py-4">
-        <div className="text-white">
+        <div className="text-black">
           <h1 className="text-3xl font-bold">
             <img className="h-8 w-36 mr-5" src={logo} alt="Your Logo" />
           </h1>
         </div>
-        <ul className="hidden lg:flex space-x-8 text-white">
+        <ul className="hidden lg:flex space-x-8 text-black">
           <li>
-            <scroll.Link
-              to="academics"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+            <Link
+              to="/academics"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ACADEMICS
-            </scroll.Link>
+            </Link>
           </li>
           <li>
-            <scroll.Link
-              to="about-us"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+            <Link
+              to="/about-us"
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ABOUT US
-            </scroll.Link>
+            </Link>
           </li>
           <li>
             <Link
@@ -178,28 +128,20 @@ const VideoNavbar = () => {
                 <div>
                   <ul className="space-y-4">
                     <li>
-                      <scroll.Link
-                        spy={true}
-                        smooth={true}
-                        offset={50}
-                        duration={500}
-                        to="academics"
+                      <Link
+                        to="/academics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ACADEMICS
-                      </scroll.Link>
+                      </Link>
                     </li>
                     <li>
-                      <scroll.Link
-                        spy={true}
-                        smooth={true}
-                        offset={50}
-                        duration={500}
-                        to="about-us"
+                      <Link
+                        to="/about-us"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ABOUT US
-                      </scroll.Link>
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -238,7 +180,7 @@ const VideoNavbar = () => {
                 <div>
                   <button
                     aria-label="Close Menu"
-                    title="Close Menu" 
+                    title="Close Menu"
                     className="p-2 -mt-2 ml-52 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     onClick={closeMenu}
                   >
@@ -255,9 +197,8 @@ const VideoNavbar = () => {
           )}
         </div>
       </nav>
-      {/* Description Section */}
     </div>
   );
 };
 
-export default VideoNavbar;
+export default Navbar;
