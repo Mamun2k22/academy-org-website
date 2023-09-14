@@ -3,6 +3,9 @@ import t from "../../assets/t.png";
 import fire from "../../assets/fire.png";
 import rocket from "../../assets/rocket.png";
 import growth from "../../assets/growth.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const AcademicCard = () => {
   return (
     <div className="py-12">
@@ -103,7 +106,12 @@ const AcademicCard = () => {
         </div>
         <div className="flex justify-center items-center">
           <div className="text-center space-y-4">
-            <p className="text-white text-xl">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              className="text-white text-xl"
+            >
               To learn more or to start the application process click below!
             </p>
             <button className="bg-[#ff4041] text-white rounded-full py-2 px-6">

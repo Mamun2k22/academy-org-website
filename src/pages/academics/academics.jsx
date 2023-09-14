@@ -7,10 +7,24 @@ const Academics = () => {
       <div id="academics" className="py-12 bg-[#1d3767] md:px-18 lg:px-12">
         <div className="space-y-6 ">
           <div>
-            <h4 className="text-md  text-white">Program Overview</h4>
-            <h3 className="text-2xl font-bold text-white">Liberty to Launch</h3>
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              className="text-md  text-white"
+            >
+              Program Overview
+            </h4>
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              className="text-2xl font-bold text-white"
+            >
+              Liberty to Launch
+            </h3>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
             <p className="text-white sm:w-2/3">
               Our curriculum is tailored to maximize learning for each age
               group, fostering a natural and intuitive educational experience.

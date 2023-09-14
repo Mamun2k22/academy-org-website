@@ -238,7 +238,7 @@ const VideoNavbar = () => {
                 <div>
                   <button
                     aria-label="Close Menu"
-                    title="Close Menu"
+                    title="Close Menu" 
                     className="p-2 -mt-2 ml-52 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     onClick={closeMenu}
                   >
