@@ -1,7 +1,6 @@
-import React from 'react';
 const About = ()=> {
     return (
-      <div>
+      <div id='about-us'>
         <div
           className="bg-cover bg-center h-screen my-20 relative bg-fixed"
           style={{

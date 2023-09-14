@@ -4,6 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import wd from "../../assets/wd.mp4";
+
+import * as scroll from "react-scroll";
 import { Link } from "react-router-dom";
 
 const VideoNavbar = () => {
@@ -58,20 +60,28 @@ const VideoNavbar = () => {
         </div>
         <ul className="hidden lg:flex space-x-8 text-white">
           <li>
-            <Link
-              to="/academics"
+            <scroll.Link
+              to="academics"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ACADEMICS
-            </Link>
+            </scroll.Link>
           </li>
           <li>
-            <Link
-              to="/about-us"
+            <scroll.Link
+              to="about-us"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
               className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
               ABOUT US
-            </Link>
+            </scroll.Link>
           </li>
           <li>
             <Link
@@ -168,20 +178,28 @@ const VideoNavbar = () => {
                 <div>
                   <ul className="space-y-4">
                     <li>
-                      <Link
-                        to="/academics"
+                      <scroll.Link
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        to="academics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ACADEMICS
-                      </Link>
+                      </scroll.Link>
                     </li>
                     <li>
-                      <Link
-                        to="/about-us"
+                      <scroll.Link
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        to="about-us"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         ABOUT US
-                      </Link>
+                      </scroll.Link>
                     </li>
                     <li>
                       <Link
