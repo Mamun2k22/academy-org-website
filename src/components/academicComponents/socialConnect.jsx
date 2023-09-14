@@ -5,11 +5,17 @@ import article3 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchoo
 import article4 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-grades9-12-01-600x403.jpg";
 import article5 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-06-600x403.jpg";
 import article6 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-IG-22-600x403.jpeg";
+import Modal from "react-modal";
+import { AiOutlineClose } from "react-icons/ai";
 
 import { BiLogoInstagram } from "react-icons/bi";
 import { useState } from "react";
+
+Modal.setAppElement("#root");
 const SocialConnect = () => {
   const [currentShow, setCurrentShow] = useState(3);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const socialData = [
     {
       _id: 1,
@@ -60,8 +66,16 @@ const SocialConnect = () => {
         "An Overview of Personalized Learning for Schools, Families & Communities Read Full PDF",
     },
   ];
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
   return (
-    <div className="py-12">
+    <div className="py-12 relative">
       <div className="text-center mx-auto w-11/12 sm:w-2/3">
         <h2 className="text-xl sm:text-2xl font-bold">Let’s Get Social!</h2>
         <i className="text-xl sm:text-2xl text-[#444444] pt-6">
@@ -111,7 +125,11 @@ const SocialConnect = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {socialData?.slice(0, currentShow).map((social) => {
             return (
-              <div className="hover:cursor-pointer " key={social?._id}>
+              <div
+                onClick={openModal}
+                className="hover:cursor-pointer "
+                key={social?._id}
+              >
                 <div className="relative group">
                   <img
                     src={social?.image}
@@ -140,6 +158,18 @@ const SocialConnect = () => {
           load more
         </button>
       </div>
+
+      <Modal
+        className="w-1/2 mx-auto h-screen overflow-auto bg-white"
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+      >
+        <AiOutlineClose
+          onClick={closeModal}
+          className="text-2xl hover:cursor-pointer absolute top-2 sm:right-40"
+        />
+      </Modal>
     </div>
   );
 };
