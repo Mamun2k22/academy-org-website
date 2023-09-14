@@ -8,38 +8,45 @@ import EventPage from "../pages/eventPage/eventPage";
 import LunchProgram from "../pages/lounchProgram/lunchProgram";
 import OurTeam from "../pages/ourTeam/ourTeam";
 import App from "../App";
+import { Home } from "../pages/home/Home";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/academics",
-    element: <Academics />,
-  },
-  {
-    path: "/about-us",
-    element: <AboutUs />,
-  },
-  {
-    path: "/contact-us",
-    element: <ContactPage />,
-  },
-  {
-    path: "/event",
-    element: <EventPage />,
-  },
-  {
-    path: "/our-team",
-    element: <OurTeam />,
-  },
-  {
-    path: "/admission",
-    element: <AdmissionPage />,
-  },
-  {
-    path: "/lunch-program",
-    element: <LunchProgram />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/academics",
+        element: <Academics />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactPage />,
+      },
+      {
+        path: "/event",
+        element: <EventPage />,
+      },
+      {
+        path: "/our-team",
+        element: <OurTeam />,
+      },
+      {
+        path: "/admission",
+        element: <AdmissionPage />,
+      },
+      {
+        path: "/lunch-program",
+        element: <LunchProgram />,
+      },
+    ],
   },
 ]);

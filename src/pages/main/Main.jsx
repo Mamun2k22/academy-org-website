@@ -1,9 +1,15 @@
-import { Home } from "../home/Home";
+import { Outlet } from "react-router-dom";
+import VideoNavbar from "../home/VideoNavbar";
+import Footer from "../../shared/footer";
 
 export const Main = () => {
   return (
-    <>
-      <Home />
-    </>
+    <div>
+      <VideoNavbar />
+      <div className="">
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
   );
 };
