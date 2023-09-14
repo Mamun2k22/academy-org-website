@@ -1,12 +1,15 @@
-
-import About from "./About";
-import ResourcePart from "./ResourcePart";
+import Article from "../../components/aboutUsComponents/article";
+import ParentStories from "../../components/aboutUsComponents/parentStories";
 
 const AboutUs = () => {
   return (
     <div>
-      <About></About>
-      <ResourcePart></ResourcePart>
+      <div>
+        <ParentStories />
+      </div>
+      <div>
+        <Article />
+      </div>
     </div>
   );
 };

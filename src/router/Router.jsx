@@ -6,12 +6,12 @@ import AdmissionPage from "../pages/admission/admissionPage";
 import ContactPage from "../pages/contact/contact";
 import EventPage from "../pages/eventPage/eventPage";
 import LunchProgram from "../pages/lounchProgram/lunchProgram";
-import { Main } from "../pages/main/Main";
 import OurTeam from "../pages/ourTeam/ourTeam";
+import App from "../App";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <App />,
     errorElement: <ErrorPage />,
   },
   {
