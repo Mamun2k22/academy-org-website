@@ -6,7 +6,7 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div className="bg-[#1d3767] ">
+    <div className="bg-[#1d3767]">
       <div className=" sm:w-1/3 mx-auto space-y-6 text-center py-16">
         <img
           className="mx-auto"

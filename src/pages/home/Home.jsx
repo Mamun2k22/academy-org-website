@@ -7,7 +7,7 @@ export const Home = () => {
     <div>
       <VideoSlider />
       <OurMissions />
-      <div className="md:px-18 lg:px-12 mt-10">
+      <div className=" mt-10">
         <AboutUs />
       </div>
       <div className=" mt-10">

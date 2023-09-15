@@ -11,7 +11,7 @@ const AcademicCard = () => {
     <div className="py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <div className="mb-4 md:mb-0">
-          <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative lg:max-w-lg overflow-hidden bg-cover bg-no-repeat">
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={book} alt="" />
               <div className="space-y-3">
@@ -30,7 +30,7 @@ const AcademicCard = () => {
           </div>
         </div>
         <div className="mb-4 md:mb-0">
-          <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative lg:max-w-lg overflow-hidden bg-cover bg-no-repeat">
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={t} alt="" />
               <div className="space-y-3">
@@ -47,7 +47,7 @@ const AcademicCard = () => {
           </div>
         </div>
         <div className="mb-4 md:mb-0">
-          <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative lg:max-w-lg overflow-hidden bg-cover bg-no-repeat">
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={fire} alt="" />
               <div className="space-y-3">
@@ -66,7 +66,7 @@ const AcademicCard = () => {
           </div>
         </div>
         <div className="mb-4 md:mb-0">
-          <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative lg:max-w-lg overflow-hidden bg-cover bg-no-repeat">
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={rocket} alt="" />
               <div className="space-y-3">
@@ -85,7 +85,7 @@ const AcademicCard = () => {
           </div>
         </div>
         <div className="mb-4 md:mb-0">
-          <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative lg:max-w-lg overflow-hidden bg-cover bg-no-repeat">
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={growth} alt="" />
               <div className="space-y-3">

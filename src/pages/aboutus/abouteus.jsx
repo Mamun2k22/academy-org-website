@@ -11,10 +11,10 @@ const AboutUs = () => {
         <About />
         <ResourcePart />
       </div>
-      <div>
+      <div className="md:px-18 lg:px-12">
         <ParentStories />
       </div>
-      <div>
+      <div className="md:px-18 lg:px-12">
         <Article />
       </div>
     </div>

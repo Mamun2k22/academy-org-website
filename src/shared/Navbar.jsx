@@ -1,7 +1,9 @@
 import logo from "../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import * as scroll from "react-scroll"
 const Navbar = () => {
+  const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -10,29 +12,56 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-12 relative z-10 flex items-center justify-between px-4 py-4">
+      <nav className="mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-12 fixed top-0 left-0 right-0 bg-white z-10 flex items-center justify-between px-4 py-4">
         <div className="text-black">
           <h1 className="text-3xl font-bold">
             <img className="h-8 w-36 mr-5" src={logo} alt="Your Logo" />
           </h1>
         </div>
         <ul className="hidden lg:flex space-x-8 text-black">
-          <li>
-            <Link
-              to="/academics"
-              className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-            >
-              ACADEMICS
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about-us"
-              className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-            >
-              ABOUT US
-            </Link>
-          </li>
+          {
+            location.pathname === '/' ? <li>
+              <scroll.Link
+                to="academics"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                ACADEMICS
+              </scroll.Link>
+            </li> : <li>
+              <Link
+                to="/"
+                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                ACADEMICS
+              </Link>
+            </li>
+          }
+
+          {
+            location.pathname === '/' ? <li>
+              <scroll.Link
+                to="about-us"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                ABOUT US
+              </scroll.Link>
+            </li> : <li>
+              <Link
+                to="/"
+                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                ABOUT US
+              </Link>
+            </li>
+          }
+
+
           <li>
             <Link
               to="/our-team"
@@ -127,22 +156,46 @@ const Navbar = () => {
               <div className="flex p-5 bg-white border rounded shadow-sm">
                 <div>
                   <ul className="space-y-4">
-                    <li>
-                      <Link
-                        to="/academics"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        ACADEMICS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/about-us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        ABOUT US
-                      </Link>
-                    </li>
+                    {
+                      location.pathname === '/' ? <li>
+                        <scroll.Link
+                          to="academics"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          ACADEMICS
+                        </scroll.Link>
+                      </li> : <li>
+                        <Link
+                          to="/"
+                          className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          ACADEMICS
+                        </Link>
+                      </li>
+                    }
+                    {
+                      location.pathname === '/' ? <li>
+                        <scroll.Link
+                          to="about-us"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          ABOUT US
+                        </scroll.Link>
+                      </li> : <li>
+                        <Link
+                          to="/"
+                          className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          ABOUT US
+                        </Link>
+                      </li>
+                    }
                     <li>
                       <Link
                         to="/our-team"
