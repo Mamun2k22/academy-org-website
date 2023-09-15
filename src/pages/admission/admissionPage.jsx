@@ -1,7 +1,7 @@
 const AdmissionPage = () => {
   return (
     <div>
-      <h2>Here is a admission page</h2>
+      <h2>this is admission page</h2>
     </div>
   );
 };
