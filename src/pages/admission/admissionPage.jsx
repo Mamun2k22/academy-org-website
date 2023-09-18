@@ -1,7 +1,7 @@
 const AdmissionPage = () => {
   return (
-    <div>
-      <h2>this is admission page</h2>
+    <div className="lg:py-20 px-4 py-20">
+      <h2 className="text-black">this is admission page</h2>
     </div>
   );
 };
