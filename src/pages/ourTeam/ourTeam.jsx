@@ -1,6 +1,6 @@
 const OurTeam = () => {
   return (
-    <div>
+    <div className="py-12">
       <h2>this is our team page</h2>
     </div>
   );
