@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative">
-      <nav className="mx-auto max-w-full md:max-w-full  md:px-18 lg:px-12 fixed top-0 left-0 right-0 bg-white z-10 flex items-center justify-between px-4 py-4">
+    <div>
+      <nav className="mx-auto max-w-full md:max-w-full md:px-18 lg:px-12 fixed top-0 left-0 right-0 bg-white z-10 flex items-center justify-between px-4 py-4">
         <div className="text-black">
           <h1 className="text-3xl font-bold">
             <img className="h-8 w-36 mr-5" src={logo} alt="Your Logo" />
