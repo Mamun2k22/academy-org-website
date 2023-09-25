@@ -1,8 +1,8 @@
 const AdmissionBanner = () => {
     return (
-      <div className="lg:py-0 px-4 ">
+      <div className="">
          <div
-          className="bg-cover bg-center h-screen my-20 relative bg-fixed"
+          className="bg-cover bg-center h-screen lg:my-20 relative bg-fixed"
           style={{
             backgroundImage:
               'url("https://libertylaunchacademy.org/wp-content/uploads/2023/08/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-SchoolLife-007.jpg")',

@@ -119,7 +119,7 @@ School Supply List 23-24
       <li>
         <a
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/"
+          href="https://www.facebook.com/libertylaunchacademy"
         >
           <img className="h-6 w-6" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="" srcset="" />
         </a>
@@ -127,7 +127,7 @@ School Supply List 23-24
       <li>
         <a
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/"
+          href="https://www.instagram.com/liberty_launch_academy/"
         >
           <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="" srcset="" />
         </a>
