@@ -48,7 +48,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/admission"
+          to="/our-team"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           OUR TEAM
@@ -96,7 +96,7 @@ const Navbar = () => {
                 <NavLink
                   activeClassName="active"
                   className="hover:text-[#73C780] text-[14px]"
-                  to="/contact"
+                  to="/contact-us"
                 >
                   CONTACT
                 </NavLink>
@@ -107,14 +107,13 @@ const Navbar = () => {
         )}
       </li>
       <li>
-        <a
+        <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/providerDirectory/US/WA/Issaquah/All-Star-Academy-fc79250f8c5b8043/programs/9942-w56b-zb3a/All-Star-Camp!?refer&provider=2439"
-          target="_blank"
+          to="/contact-us"
           rel="noreferrer"
         >
           CONTACT US
-        </a>
+        </NavLink>
       </li>
       <li>
         <a
@@ -133,15 +132,15 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a
+        <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/"
+          to="/admission"
           
         >
           <button className="bg-red-500 lg:text-lg text-white py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
                 Admissions
               </button>
-        </a>
+        </NavLink>
       </li>
      
      
