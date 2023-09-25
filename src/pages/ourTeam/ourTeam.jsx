@@ -1,7 +1,9 @@
+import TeamDetails from "./TeamDetails";
+
 const OurTeam = () => {
   return (
     <div>
-      <h2>this is our team page</h2>
+   <TeamDetails></TeamDetails>
     </div>
   );
 };

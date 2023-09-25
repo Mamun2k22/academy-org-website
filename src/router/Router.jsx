@@ -9,6 +9,7 @@ import OurTeam from "../pages/ourTeam/ourTeam";
 import App from "../App";
 import { Home } from "../pages/home/Home";
 import Admission from "../pages/admission/Admission";
+import TeamDetailsPage from "../pages/ourTeam/TeamDetailsPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/our-team",
         element: <OurTeam />,
+      },
+      {
+        path: "/team-details",
+        element: <TeamDetailsPage />,
       },
       {
         path: "/admission",
