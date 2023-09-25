@@ -5,12 +5,10 @@ import Academics from "../pages/academics/academics";
 import ContactPage from "../pages/contact/contact";
 import EventPage from "../pages/eventPage/eventPage";
 import LunchProgram from "../pages/lounchProgram/lunchProgram";
-import OurTeam from "../pages/ourTeam/ourTeam";
 import App from "../App";
 import { Home } from "../pages/home/Home";
 import Admission from "../pages/admission/Admission";
 import AdmissionPage from "../pages/admission/admissionPage";
-import TeamDetailsPage from "../pages/ourTeam/TeamDetailsPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -37,14 +35,14 @@ export const router = createBrowserRouter([
         path: "/event",
         element: <EventPage />,
       },
-      {
-        path: "/our-team",
-        element: <OurTeam />,
-      },
-      {
-        path: "/team-details",
-        element: <TeamDetailsPage />,
-      },
+      // {
+      //   path: "/our-team",
+      //   element: <OurTeam />,
+      // },
+      // {
+      //   path: "/team-details",
+      //   element: <TeamDetailsPage />,
+      // },
       {
         path: "/admission",
         element: <Admission />,
