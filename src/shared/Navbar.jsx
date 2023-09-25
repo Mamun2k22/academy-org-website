@@ -29,7 +29,7 @@ const Navbar = () => {
       >
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/about"
+          to="/academics"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           ACADEMICS
@@ -39,7 +39,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/academics"
+          to="/about-us"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           ABOUT US
@@ -85,10 +85,10 @@ const Navbar = () => {
               <li>
                 <NavLink
                   activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px]"
-                  to="/birthday"
+                  className="hover:text-[#73C780] text-[14px] "
+                  to="/lunch-program"
                 >
-                  BIRTHDAY
+                  School Lunch Program
                 </NavLink>
               </li>
   
@@ -98,7 +98,8 @@ const Navbar = () => {
                   className="hover:text-[#73C780] text-[14px]"
                   to="/contact-us"
                 >
-                  CONTACT
+                
+School Supply List 23-24
                 </NavLink>
               </li>
            
