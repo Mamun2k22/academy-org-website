@@ -47,7 +47,7 @@ const Financial = () => {
           </div>
         </div>
        
-      </div>
+        </div>
         </div>
     );
 };
