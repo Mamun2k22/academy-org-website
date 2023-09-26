@@ -30,7 +30,7 @@ const About = () => {
                   every child not only excels but also leads and makes a lasting
                   impact on the world.
                 </p>
-                <button className="bg-orange-600 px-6 py-3 mt-5 rounded-full text-sm">
+                <button className="bg-red-500 px-6 py-3 mt-5 rounded-full text-sm">
                   Call for Tour
                 </button>
               </div>
@@ -39,7 +39,7 @@ const About = () => {
               <div className="basis-2/5 mt-12 ">
                 <img
                   className="h-[560px] w-[700px] pb-5"
-                  src="https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-06-900x604.jpg"
+                  src="https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-04.jpg"
                   alt=""
                 />
               </div>
