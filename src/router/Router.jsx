@@ -8,8 +8,9 @@ import LunchProgram from "../pages/lounchProgram/lunchProgram";
 import App from "../App";
 import { Home } from "../pages/home/Home";
 import Admission from "../pages/admission/Admission";
-import AdmissionPage from "../pages/admission/admissionPage";
+import AdmissionPage from "../pages/admission/AdmissionPage";
 import OurTeam from "../pages/ourTeam/ourTeam";
+import TeamDetailsPage from "../pages/ourTeam/TeamDetailsPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -40,10 +41,10 @@ export const router = createBrowserRouter([
         path: "/our-team",
         element: <OurTeam />,
       },
-      // {
-      //   path: "/team-details",
-      //   element: <TeamDetailsPage />,
-      // },
+      {
+        path: "/team-details",
+        element: <TeamDetailsPage />,
+      },
       {
         path: "/admission",
         element: <Admission />,

@@ -12,7 +12,7 @@ const OurMissions = () => {
       id: 101,
       title: "Innovation",
       imageUrl:
-        "https://images.pexels.com/photos/6479591/pexels-photo-6479591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://libertylaunchacademy.org/wp-content/uploads/2023/08/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-SchoolLife-077.jpg",
       details:
         "Embracing creativity and new ideas fosters an environment where students flourish and learning excels.",
       icon: icon1,
@@ -21,7 +21,7 @@ const OurMissions = () => {
       id: 102,
       title: "Character Development",
       imageUrl:
-        "https://images.pexels.com/photos/6479591/pexels-photo-6479591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-grades9-12-04.jpg",
       details:
         "Proactively helping kids to see that it is not just about what they want to do, but who they are that can make the difference!",
       icon: icon2,
@@ -30,7 +30,7 @@ const OurMissions = () => {
       id: 103,
       title: "Athletics ",
       imageUrl:
-        "https://images.pexels.com/photos/12705633/pexels-photo-12705633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://libertylaunchacademy.org/wp-content/uploads/2023/08/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Athletics-Program_008-YouthRugby.jpeg",
       details:
         "We engage with clubs such as lacrosse, rugby, wrestling, soccer, and more!",
       icon: icon3,
@@ -39,7 +39,7 @@ const OurMissions = () => {
       id: 104,
       title: "Project Based Learning",
       imageUrl:
-        "https://images.pexels.com/photos/735249/pexels-photo-735249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://libertylaunchacademy.org/wp-content/uploads/2023/08/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-SchoolLife-019.jpg",
       details:
         "Spark curiosity and hold students accountable to apply the knowledge that they learn with empathy and collaboration.",
       icon: icon4,
