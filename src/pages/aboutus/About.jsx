@@ -15,19 +15,17 @@ const About = () => {
               <div>
                 <h1 className="text-2xl">ABOUT US</h1>
                 <h2 className="text-5xl font-extrabold py-6">
-                  Nurturing Leaders,
+                  Nurturing Students,
                   <br />
                   Shaping Success
                 </h2>
                 <p className="w-8/12">
-                  Liberty Launch Academy is more than a school; it's a catalyst
-                  for the trailblazers of tomorrow. Here, we nurture young
-                  athletes, inspire budding entrepreneurs, and ignite the
-                  passion of innovative thinkers. Dedicated to experiential
+                  All Star Academy is more than a school; it's driving a new arrow of education. Here, we nurture Students, inspire passionate purpose , and ignite 
+                  motivation from  within. Dedicated to experiential
                   learning, our students actively apply their knowledge, setting
                   them apart as standout students and leaders in the community.
-                  At Liberty Launch, we're committed to shaping a future where
-                  every child not only excels but also leads and makes a lasting
+                  At All Star Academy, we're committed to shaping a future where
+                  every child not only excels but also find there purpose and makes a lasting
                   impact on the world.
                 </p>
                 <button className="bg-red-500 px-6 py-3 mt-5 rounded-full text-sm">

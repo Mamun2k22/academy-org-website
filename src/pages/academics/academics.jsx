@@ -21,16 +21,15 @@ const Academics = () => {
               data-aos-duration="2000"
               className="text-2xl font-bold text-white"
             >
-              Liberty to Launch
+              For the exceptional
             </h3>
           </div>
           <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
             <p className="text-white sm:w-2/3">
-              Our curriculum is tailored to maximize learning for each age
-              group, fostering a natural and intuitive educational experience.
+              Our curriculum is tailored to the individual child, fostering a natural and intuitive educational experience.
               Through this approach, our students learn to independently
               construct their life’s rocket, ensuring they are fully prepared to
-              soar into the world and thrive.
+               find there place in the world and thrive.
             </p>
           </div>
         </div>

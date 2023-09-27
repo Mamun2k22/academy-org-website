@@ -70,7 +70,7 @@ const ResourcePart = () => {
           Resource Partners
         </h1>
         <p className="font-normal text-black lg:px-72 text-[24px] lg:mt-5 mt-4 ">
-          We are pioneering the future of education and are constantly
+          We are driving a new arrow of education and are constantly
           identifying, testing and implementing the best tools, resources, and
           programs to fulfill our vision of excellence, empowering growth
           together!

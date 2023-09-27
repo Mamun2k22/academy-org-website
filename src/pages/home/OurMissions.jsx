@@ -57,9 +57,9 @@ const OurMissions = () => {
           Whole Child
         </h1>
         <p className="font-sans text-black lg:px-72 text-[24px] lg:mt-5 mx-10 mt-4 ">
-          Liberty Launch Academy offers a compelling alternative to public
+          All Star Academy offers a compelling alternative to public
           education, focusing on experiential learning, whole child development,
-          and preparing principled leaders for the future.
+          and preparing  exceptional students for the future.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 lg:my-16 ml-5 mt-10 lg:gap-0 gap-6">
@@ -79,11 +79,10 @@ const OurMissions = () => {
               style={{ backgroundImage: `url(${card.imageUrl})` }}
             />
             <div
-              className={`absolute inset-x-0 bottom-0 ${
-                hoveredCard === card.id
-                  ? "h-72 bg-gradient-to-t from-[#1D3767] text-white opacity-100 pb-5"
-                  : "h-52 opacity-100 text-white"
-              } transition-all duration-700 ease-in-out`}
+              className={`absolute inset-x-0 bottom-0 ${hoveredCard === card.id
+                ? "h-72 bg-gradient-to-t from-[#1D3767] text-white opacity-100 pb-5"
+                : "h-52 opacity-100 text-white"
+                } transition-all duration-700 ease-in-out`}
             >
               <div
                 className={
