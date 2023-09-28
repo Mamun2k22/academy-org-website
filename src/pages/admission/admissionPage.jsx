@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom";
 import "../contact/contact";
 
 const AdmissionPage = () => {
   return (
-    <div className="my-20 lg:w-6/12 mx-auto px-10">
+    <div className="my-20 lg:w-7/12 mx-auto px-10">
       <h1 className="text-3xl lg:text-4xl font-bold text-center">Admissions & Tuition</h1>
       <form>
         <h1 className="text-2xl lg:text-3xl text-center my-5">Fill out the form below.</h1>
@@ -101,7 +103,16 @@ const AdmissionPage = () => {
             />
             </div>
           </div>
+          
+          
+          
         </div>
+          <div className="lg:mt-10">
+        <Link to={''}>
+        <button className="flex btn bg-zinc-800 px-4 py-1 rounded-full text-white">
+              Next
+            </button></Link>
+          </div>
       </form>
     </div>
   );

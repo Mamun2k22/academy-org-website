@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Financial = () => {
     return (
@@ -35,9 +36,11 @@ const Financial = () => {
                 At Liberty Launch Academy, we recognize the importance of making our outstanding educational experiences accessible to all families, regardless of their financial circumstances. Our Financial Assistance program is designed to ease the tuition burden, encompassing not just need-based financial aid but also discounts to acknowledge parent support and volunteer contributions to our community.
                 To be considered for our financial aid or volunteer discounts, complete our application and we will reach out to talk to you more about out payment options and financial assistance
                 </p>
-                <button className="bg-red-500 px-10 py-3 mt-5 rounded-full text-bs">
+               <Link to='/apply'>
+               <button className="bg-red-500 px-10 py-3 mt-5 rounded-full text-bs">
                   Start Application Process
                 </button>
+               </Link>
                 <button className="hover:text-white text-white px-10 py-3 rounded-3xl hover:bg-red-600 border-2 border-white text-bs lg:mt-0 mt-4 lg:ml-3">
                   Contact Us
                 </button>
