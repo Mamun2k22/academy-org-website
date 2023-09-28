@@ -11,6 +11,7 @@ import Admission from "../pages/admission/Admission";
 import AdmissionPage from "../pages/admission/AdmissionPage";
 import OurTeam from "../pages/ourTeam/ourTeam";
 import TeamDetailsPage from "../pages/ourTeam/TeamDetailsPage";
+import AdmissionFormTwo from "../pages/admission/AdmissonFormTwo";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: "/admission",
         element: <Admission />,
+      },
+      {
+        path: "/admissionform",
+        element: <AdmissionFormTwo/>,
       },
       {
         path: "/apply",

@@ -108,9 +108,9 @@ const AdmissionPage = () => {
           
         </div>
           <div className="lg:mt-10">
-        <Link to={''}>
-        <button className="flex btn bg-zinc-800 px-4 py-1 rounded-full text-white">
-              Next
+            <Link to={'/admissionform'}>
+            <button className="flex btn bg-zinc-800 px-4 py-1 rounded-full text-white">
+             Next
             </button></Link>
           </div>
       </form>
