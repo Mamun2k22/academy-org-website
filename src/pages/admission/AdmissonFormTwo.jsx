@@ -11,14 +11,14 @@ const selectStyles = {
     ...styles,
     borderColor: isFocused ? 'none' : '',
     boxShadow: isFocused ? '0 0 0 1px #FF4041' : 'none',
-    
+
   }),
   option: (styles, { isFocused, isSelected, isHovered }) => ({
     ...styles,
     backgroundColor: isSelected ? 'gray' : isHovered ? 'gray' : 'white',
     color: isSelected ? 'white' : isFocused ? 'black' : 'black',
   }),
-  backgroundColor:"gray"
+  backgroundColor: "gray"
 };
 
 const AdmissionFormTwo = () => {
@@ -226,7 +226,7 @@ const AdmissionFormTwo = () => {
             ></textarea>
             <div className="flex gap-x-5 mt-10">
               <Link to={'/apply'}>
-              <button>Previous</button></Link>
+                <button>Previous</button></Link>
               <button className="bg-[#FF4041] text-white font-medium py-3 px-5 rounded-full">
                 Submit
               </button>
