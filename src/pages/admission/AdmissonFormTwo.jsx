@@ -20,6 +20,7 @@ const selectStyles = {
   }),
   backgroundColor:"gray"
 };
+
 const AdmissionFormTwo = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const allCountry = Country.getAllCountries();
@@ -30,12 +31,30 @@ const AdmissionFormTwo = () => {
     reset
   } = useForm();
   
+  const handleSignUp = async (data) => {
+    const guardianForm = {
+      
+       firstName,
+       lastName,
+       email,
+       phoneNo,
+       address,
+       streetAddress,
+       addressLine2,
+       city,
+       region,
+       postalCode,
+       country
+    } 
+
+  }; 
+
   return (
     <div className="my-20 lg:w-7/12 mx-auto px-10">
       <h1 className="text-3xl lg:text-4xl font-bold text-center">
         Admissions & Tuition
       </h1>
-      <form>
+      <form onSubmit={handleSubmit(handleSignUp)}>
         <h1 className="text-2xl lg:text-3xl text-center my-5">
           Fill out the form below.
         </h1>
@@ -172,16 +191,24 @@ const AdmissionFormTwo = () => {
             />
             <h2 className="my-1">ZIP / Postal Code</h2>
           </div>
-          <div className="w-full">
-            <select
-             {...register("country")}
-            className="hover:border-none"
-              defaultValue={selectedOption}
-              onChange={setSelectedOption}
-              placeholder=""
-              styles={selectStyles}
-            />
-            <h2 className="my-1"> Country</h2>
+          <div className="w-full lg:mt-2">
+          <select
+                    {...register("country")}
+                  
+                      id="country"
+                      name="country"
+                      className="hover:border-none"
+                    >
+                      <option defaultChecked>Choose a country</option>
+                      {allCountry.map((country, index) => {
+                        return (
+                          <option key={index} value={country.name}>
+                            {country.name}
+                          </option>
+                        );
+                      })}
+                    </select>
+           
           </div>
         </div>
         <h2 className="pt-5 pb-2">
