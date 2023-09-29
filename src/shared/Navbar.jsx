@@ -83,7 +83,7 @@ const Navbar = () => {
       >
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/afterschool"
+          to="/event"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           EVENTS
@@ -179,7 +179,7 @@ const Navbar = () => {
 
             className="inline-flex items-center mx-auto sm:mx-0"
           >
-            <img className="w-72 h-[96px]" src={"https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-Idaho-clr-01.svg"} alt="" />
+            <img className="w-60 h-[90px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {menuItems}
