@@ -16,7 +16,7 @@ const AcademicCard = () => {
               <img className="w-16 h-16" src={book} alt="" />
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-white">
-                  Littles Launch Academy (ages 3-5)
+                  3k/kindergarten (ages 4-6)
                 </h3>
                 <p className="text-white">
                   We lay foundational skills in reading and math, emphasizing a
@@ -34,7 +34,7 @@ const AcademicCard = () => {
             <div className="lg:max-w-lg bg-[#1d3767] border border-[#3d537c] rounded px-6 sm:px-8 py-6 sm:py-8 space-y-3">
               <img className="w-16 h-16" src={t} alt="" />
               <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-white">Grades 1-4</h3>
+                <h3 className="text-xl font-semibold text-white">Grades 1-2 (ages 6-8)</h3>
                 <p className="text-white">
                   Nurturing a love for learning and honing essential skills
                   while introducing students to the community through
@@ -52,7 +52,7 @@ const AcademicCard = () => {
               <img className="w-16 h-16" src={fire} alt="" />
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-white">
-                  Grades 5-6.
+                  Grades 3-4 (ages 8-10).
                 </h3>
                 <p className="text-white">
                   Deepening durable skill development, integrating inquiry-based
@@ -71,7 +71,7 @@ const AcademicCard = () => {
               <img className="w-16 h-16" src={rocket} alt="" />
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-white">
-                  Grades 7-8{" "}
+                  Grades 5-6 (ages 10-12){" "}
                 </h3>
                 <p className="text-white">
                   Guiding students towards discovering personal interests by
@@ -90,7 +90,7 @@ const AcademicCard = () => {
               <img className="w-16 h-16" src={growth} alt="" />
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-white">
-                  Grades 9-12
+                  Home Schooling
                 </h3>
                 <p className="text-white">
                   Refining specialized skills for future endeavors,

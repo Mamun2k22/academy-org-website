@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-white">
-          © {year} Liberty Launch Academy - K-12 Private School.
+          © {year} All Star Academy - K-6 Private School.
         </p>
       </div>
     </div>

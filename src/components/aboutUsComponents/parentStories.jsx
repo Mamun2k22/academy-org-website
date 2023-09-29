@@ -17,7 +17,7 @@ const ParentStories = () => {
       <div className="space-y-3 sm:w-1/2 px-4 sm:px-0">
         <p className="text:md sm:text-xl text-[#444444]">PARENT STORIES</p>
         <h2 className="text-xl font-bold">
-          At Liberty Launch Academy, we cherish the integral role parents play
+          At All Star Academy, we cherish the integral role parents play
           in shaping their future.
         </h2>
         <p className="text-md sm:text-xl text-[#444444]">

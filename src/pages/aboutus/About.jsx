@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div id="about-us">
       <div
-        className="bg-cover bg-center h-screen my-20 relative bg-fixed"
+        className="bg-cover bg-center h-screen my-2 lg:my-2 relative bg-fixed"
         style={{
           backgroundImage:
             'url("https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-IG-22-900x604.jpeg")',
@@ -15,22 +15,20 @@ const About = () => {
               <div>
                 <h1 className="text-2xl">ABOUT US</h1>
                 <h2 className="text-5xl font-extrabold py-6">
-                  Nurturing Leaders,
+                  Nurturing Students,
                   <br />
                   Shaping Success
                 </h2>
                 <p className="w-8/12">
-                  Liberty Launch Academy is more than a school; it's a catalyst
-                  for the trailblazers of tomorrow. Here, we nurture young
-                  athletes, inspire budding entrepreneurs, and ignite the
-                  passion of innovative thinkers. Dedicated to experiential
+                  All Star Academy is more than a school; it's driving a new arrow of education. Here, we nurture Students, inspire passionate purpose , and ignite 
+                  motivation from  within. Dedicated to experiential
                   learning, our students actively apply their knowledge, setting
                   them apart as standout students and leaders in the community.
-                  At Liberty Launch, we're committed to shaping a future where
-                  every child not only excels but also leads and makes a lasting
+                  At All Star Academy, we're committed to shaping a future where
+                  every child not only excels but also find there purpose and makes a lasting
                   impact on the world.
                 </p>
-                <button className="bg-orange-600 px-6 py-3 mt-5 rounded-full text-sm">
+                <button className="bg-red-500 px-6 py-3 mt-5 rounded-full text-sm">
                   Call for Tour
                 </button>
               </div>
@@ -39,7 +37,7 @@ const About = () => {
               <div className="basis-2/5 mt-12 ">
                 <img
                   className="h-[560px] w-[700px] pb-5"
-                  src="https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-06-900x604.jpg"
+                  src="https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-04.jpg"
                   alt=""
                 />
               </div>

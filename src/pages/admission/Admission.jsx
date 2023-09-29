@@ -1,13 +1,13 @@
-import React from 'react';
-import AdmissionPage from './admissionPage';
+
 import ApplicationProcess from './ApplicationProcess';
 import AnnulTution from './AnnulTution';
 import Financial from './Financial';
+import AdmissionBanner from './AdmissionBanner';
 
 const Admission = () => {
     return (
         <div>
-            <AdmissionPage></AdmissionPage>
+            <AdmissionBanner></AdmissionBanner>
             <ApplicationProcess></ApplicationProcess>
             <AnnulTution></AnnulTution>
             <Financial></Financial>

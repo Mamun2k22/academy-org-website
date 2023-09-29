@@ -79,7 +79,7 @@ const SocialConnect = () => {
       <div className="text-center mx-auto w-11/12 sm:w-2/3">
         <h2 className="text-xl sm:text-2xl font-bold">Let’s Get Social!</h2>
         <i className="text-xl sm:text-2xl text-[#444444] pt-6">
-          Join our family at Liberty Launch Academy! Follow us on Instagram and
+          Join our family at All Star Academy! Follow us on Instagram and
           Facebook to keep pace with our vibrant learning community, and
           discover the exciting events and enriching activities we offer for
           your children.
@@ -101,7 +101,7 @@ const SocialConnect = () => {
               target="_blank"
               className="hover:underline text-xl font-bold"
             >
-              Liberty Launch Academy
+              All Star Academy
             </a>
             <hr />
             <a
@@ -109,7 +109,7 @@ const SocialConnect = () => {
               target="_blank"
               className="hover:underline text-[#444444]"
             >
-              @liberty_launch_academy
+              @all_star_academy
             </a>
           </div>
           <a

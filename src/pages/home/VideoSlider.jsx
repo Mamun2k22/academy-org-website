@@ -14,13 +14,10 @@ const VideoSlider = () => {
         <div className="flex absolute lg:top-64">
           <div className="text-left text-white mt-16 lg:w-1/2 w-full px-6 lg:mx-20">
             <h1 className="text-3xl font-bold ">
-              Disrupting Education for Good
+              We Are For The Exceptional
             </h1>
             <p className="mt-4 text-xl">
-              Calling youth athletes, entrepreneurs, and innovators! Liberty
-              Launch Academy is a forge for the next generation of principled
-              leaders who will rise above the status quo, thrive, and make the
-              difference that the world needs.
+              calling all discourage diInterested acting out and just plain dreading school student
             </p>
 
             <div className="mt-4 space-x-2">

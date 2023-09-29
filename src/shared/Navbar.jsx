@@ -1,11 +1,33 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import SearchBar from "../components/searchBar";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showMoreDropdown, setShowMoreDropdown] = useState(false);
   const [showAfterDropdown, setShowAfterDropdown] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  console.log(scrolled)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   const toggleMoreDropdown = () => {
     setShowMoreDropdown(!showMoreDropdown);
@@ -29,17 +51,17 @@ const Navbar = () => {
       >
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/about"
+          to="/academics"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           ACADEMICS
         </NavLink>
-        
+
       </li>
       <li>
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/academics"
+          to="/about-us"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           ABOUT US
@@ -61,47 +83,48 @@ const Navbar = () => {
       >
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
-          to="/afterschool"
+          to="/event"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           EVENTS
         </NavLink>
-    
+
       </li>
 
-   
-  
+
+
       <li
         className="relative"
         onMouseEnter={toggleMoreDropdown}
         onMouseLeave={toggleMoreDropdown}
       >
         <span className="hover:text-[#73C780] text-[14px] cursor-pointer">
-        PARENTS
+          PARENTS
         </span>
         {showMoreDropdown && (
           <div className="absolute z-10">
-            <ul className="bg-white shadow-md rounded-md w-32 text-center py-2">
+            <ul className=" bg-white shadow-md  rounded-md w-32 text-center py-2">
               <li>
                 <NavLink
                   activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px]"
-                  to="/birthday"
+                  className="hover:text-[#73C780] text-[14px] "
+                  to="/lunch-program"
                 >
-                  BIRTHDAY
+                  School Lunch Program
                 </NavLink>
               </li>
-  
+
               <li>
                 <NavLink
                   activeClassName="active"
                   className="hover:text-[#73C780] text-[14px]"
                   to="/contact-us"
                 >
-                  CONTACT
+
+                  School Supply List 23-24
                 </NavLink>
               </li>
-           
+
             </ul>
           </div>
         )}
@@ -118,7 +141,7 @@ const Navbar = () => {
       <li>
         <a
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/"
+          href="https://www.facebook.com/libertylaunchacademy"
         >
           <img className="h-6 w-6" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="" srcset="" />
         </a>
@@ -126,7 +149,7 @@ const Navbar = () => {
       <li>
         <a
           className="hover:text-[#73C780] text-[14px]"
-          href="https://www.6crickets.com/"
+          href="https://www.instagram.com/liberty_launch_academy/"
         >
           <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="" srcset="" />
         </a>
@@ -135,32 +158,33 @@ const Navbar = () => {
         <NavLink
           className="hover:text-[#73C780] text-[14px]"
           to="/admission"
-          
+
         >
           <button className="bg-red-500 lg:text-lg text-white py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
-                Admissions
-              </button>
+            Admissions
+          </button>
         </NavLink>
       </li>
-     
-     
     </>
   );
+
+  // className="bg-[#fff] sticky top-0 z-50"
   return (
-    <div className="bg-[#fff] sticky top-0 z-50">
+    <div className={`${scrolled ? "bg-[#fff]" : "bg-transparent"} sticky top-0 z-50`}>
       <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-4">
         <div className="relative flex items-center h-[100px] gap-10">
+
           <Link
             to="/"
-            
+
             className="inline-flex items-center mx-auto sm:mx-0"
           >
-            <img className="w-72 h-[96px]" src={"https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-Idaho-clr-01.svg"} alt="" />
+            <img className="w-60 h-[90px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {menuItems}
           </ul>
-         
+
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -190,7 +214,7 @@ const Navbar = () => {
                     <div>
                       <Link
                         to="/"
-                        
+
                         className="inline-flex items-center mx-auto sm:mx-0"
                       >
                         <img className="w-36 h-[32px]" src={"https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-Idaho-clr-01.svg"} alt="" />
@@ -215,16 +239,22 @@ const Navbar = () => {
                   <nav>
                     <ul className="space-y-4">
                       {menuItems}
-                     
+
                     </ul>
                   </nav>
+                </div>
+                <div className="absolute top-2 right-20 sm:top-2 sm:right-0">
+                  <SearchBar />
                 </div>
               </div>
             )}
           </div>
         </div>
       </div>
-    </div>
+      <div className="absolute top-4 right-0 hidden sm:block">
+        <SearchBar />
+      </div>
+    </div >
   );
 };
 
