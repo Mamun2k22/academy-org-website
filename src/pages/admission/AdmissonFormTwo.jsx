@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../contact/contact";
 import Select from "react-select";
-  const options = [
+const options = [
   { value: "chocolate", label: "Chocolate" },
   { value: "strawberry", label: "Strawberry" },
   { value: "vanilla", label: "Vanilla" },
@@ -64,14 +64,14 @@ const selectStyles = {
     ...styles,
     borderColor: isFocused ? 'none' : '',
     boxShadow: isFocused ? '0 0 0 1px #FF4041' : 'none',
-    
+
   }),
   option: (styles, { isFocused, isSelected, isHovered }) => ({
     ...styles,
     backgroundColor: isSelected ? 'gray' : isHovered ? 'gray' : 'white',
     color: isSelected ? 'white' : isFocused ? 'black' : 'black',
   }),
-  backgroundColor:"gray"
+  backgroundColor: "gray"
 };
 const AdmissionFormTwo = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -208,7 +208,7 @@ const AdmissionFormTwo = () => {
           </div>
           <div className="w-full">
             <Select
-            className="hover:border-none"
+              className="hover:border-none"
               defaultValue={selectedOption}
               onChange={setSelectedOption}
               options={options}
@@ -233,7 +233,7 @@ const AdmissionFormTwo = () => {
             ></textarea>
             <div className="flex gap-x-5 mt-10">
               <Link to={'/apply'}>
-              <button>Previous</button></Link>
+                <button>Previous</button></Link>
               <button className="bg-[#FF4041] text-white font-medium py-3 px-5 rounded-full">
                 Submit
               </button>
