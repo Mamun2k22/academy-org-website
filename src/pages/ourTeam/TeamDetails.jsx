@@ -21,7 +21,7 @@ const TeamDetails = () => {
   }
 
   return (
-    <div className='lg:py-36'>
+    <div className='lg:py-10'>
       <div className='lg:mx- text-center mx-4'>
         <h1 className='text-black lg:text-5xl text-4xl text-center font-bold'>Our Team</h1>
         <p className='lg:px-72 lg:text-3xl text-2xl font-serif lg:mt-5 mt-4'>We handpick those who truly understand our innovative educational model and have a proven history of guiding students to success and leadership</p>
