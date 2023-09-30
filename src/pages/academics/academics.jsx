@@ -3,8 +3,8 @@ import SocialConnect from "../../components/academicComponents/socialConnect";
 
 const Academics = () => {
   return (
-    <>
-      <div id="academics" className="py-12 bg-[#1d3767] px-4 md:px-18 lg:px-12">
+    <div>
+      <div id="academics" className="py-12 bg-[#1d3767] px-4 md:px-18 lg:px-12 ">
         <div className="space-y-6 ">
           <div>
             <h4
@@ -29,7 +29,7 @@ const Academics = () => {
               Our curriculum is tailored to the individual child, fostering a natural and intuitive educational experience.
               Through this approach, our students learn to independently
               construct their life’s rocket, ensuring they are fully prepared to
-               find there place in the world and thrive.
+              find there place in the world and thrive.
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ const Academics = () => {
       <div className="md:px-18 lg:px-12">
         <SocialConnect />
       </div>
-    </>
+    </div>
   );
 };
 
