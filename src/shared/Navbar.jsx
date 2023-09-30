@@ -98,35 +98,33 @@ const Navbar = () => {
         onMouseEnter={toggleMoreDropdown}
         onMouseLeave={toggleMoreDropdown}
       >
-        <span className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 cursor-pointer">
+        <span className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 cursor-pointer relative">
           PARENTS
         </span>
         {showMoreDropdown && (
-          <div className="absolute z-10">
-            <ul className=" bg-white shadow-md  rounded-md w-32 text-center py-2">
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px]"
-                  to="/lunch-program"
-                >
-                  School Lunch Program
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px]"
-                  to="/contact-us"
-                >
-
-                  School Supply List 23-24
-                </NavLink>
-              </li>
-
-            </ul>
-          </div>
+          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:my-5">
+          <ul className="">
+            <li>
+              <NavLink
+                activeClassName="active"
+                className="hover:text-[#73C780] text-[14px] px-5 py-3 block text-left"
+                to="/lunch-program"
+              >
+                School Lunch Program
+              </NavLink>
+            </li>
+    
+            <li>
+              <NavLink
+                activeClassName="active"
+                className="hover:text-[#73C780] text-[14px] px-5 block"
+                to="/contact-us"
+              >
+                School Supply List 23-24
+              </NavLink>
+            </li>
+          </ul>
+        </div>
         )}
       </li>
       <li>
