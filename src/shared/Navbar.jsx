@@ -50,7 +50,7 @@ const Navbar = () => {
         onMouseLeave={toggleAboutDropdown}
       >
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/academics"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -60,7 +60,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/about-us"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -69,7 +69,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/our-team"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -82,7 +82,7 @@ const Navbar = () => {
         onMouseLeave={toggleAfterDropdown}
       >
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/event"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -98,40 +98,38 @@ const Navbar = () => {
         onMouseEnter={toggleMoreDropdown}
         onMouseLeave={toggleMoreDropdown}
       >
-        <span className="hover:text-[#73C780] text-[14px] cursor-pointer">
+        <span className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 cursor-pointer relative">
           PARENTS
         </span>
         {showMoreDropdown && (
-          <div className="absolute z-10">
-            <ul className=" bg-white shadow-md  rounded-md w-32 text-center py-2">
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px] "
-                  to="/lunch-program"
-                >
-                  School Lunch Program
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px]"
-                  to="/contact-us"
-                >
-
-                  School Supply List 23-24
-                </NavLink>
-              </li>
-
-            </ul>
-          </div>
+          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:my-5">
+          <ul className="">
+            <li>
+              <NavLink
+                activeClassName="active"
+                className="hover:text-[#73C780] text-[14px] px-5 py-3 block text-stone-800 text-left"
+                to="/lunch-program"
+              >
+                School Lunch Program
+              </NavLink>
+            </li>
+    
+            <li>
+              <NavLink
+                activeClassName="active"
+                className="hover:text-[#73C780] text-[14px] px-5 block text-stone-800"
+                to="/contact-us"
+              >
+                School Supply List 23-24
+              </NavLink>
+            </li>
+          </ul>
+        </div>
         )}
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/contact-us"
           rel="noreferrer"
         >
@@ -139,28 +137,39 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-[#73C780] text-[14px]"
-          href="https://www.facebook.com/libertylaunchacademy"
-        >
-          <img className="h-6 w-6" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="" srcset="" />
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:text-[#73C780] text-[14px]"
-          href="https://www.instagram.com/liberty_launch_academy/"
-        >
-          <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="" srcset="" />
-        </a>
-      </li>
+  <a
+    className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 relative"
+    href="https://www.facebook.com/libertylaunchacademy"
+  >
+    <img
+      className="h-6 w-6 transition-transform transform scale-100 hover:scale-110"
+      src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png"
+      alt=""
+      srcSet=""
+    />
+  </a>
+</li>
+<li>
+  <a
+    className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 relative"
+    href="https://www.instagram.com/liberty_launch_academy/"
+  >
+    <img
+      className="h-5 w-5 transition-transform transform scale-100 hover:scale-110"
+      src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"
+      alt=""
+      srcSet=""
+    />
+  </a>
+</li>
+
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/admission"
 
         >
-          <button className="bg-red-500 lg:text-lg text-white py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
+          <button className=" justify-items-center bg-red-500 lg:text-lg text-white  py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
             Admissions
           </button>
         </NavLink>
@@ -170,16 +179,17 @@ const Navbar = () => {
 
   // className="bg-[#fff] sticky top-0 z-50"
   return (
-    <div className={`${scrolled ? "bg-[#fff]" : "bg-transparent"} sticky top-0 z-50`}>
-      <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-4">
-        <div className="relative flex items-center h-[100px] gap-10">
+    <div>
+      <div className={`${scrolled ? "bg-[#fff] text-stone-800" : "bg-transparent"} fixed top-0 left-0 right-0  z-10 flex items-center text-white`}>
+      <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18">
+        <div className="relative flex items-center h-[85px] gap-10">
 
           <Link
             to="/"
 
             className="inline-flex items-center mx-auto sm:mx-0"
           >
-            <img className="w-60 h-[90px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
+            <img className="w-48 h-[65px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {menuItems}
@@ -243,18 +253,21 @@ const Navbar = () => {
                     </ul>
                   </nav>
                 </div>
-                <div className="absolute top-2 right-20 sm:top-2 sm:right-0">
+                <div className="absolute top-2 lg:right-48 sm:top-2 sm:right-0 lg:left-8">
                   <SearchBar />
                 </div>
               </div>
             )}
           </div>
         </div>
-      </div>
-      <div className="absolute top-4 right-0 hidden sm:block">
+      
+        <div className="absolute lg:top-4 lg:right-32 hidden sm:block ">
         <SearchBar />
       </div>
-    </div >
+      </div>
+     
+      </div >
+    </div>
   );
 };
 
