@@ -15,7 +15,7 @@ const EventHandle = () => {
       };
     });
     return (
-        <div className='lg:my-20 mx-14'>
+        <div className='lg:my-40 mx-14'>
             <Calendar
         localizer={localizer}
         startAccessor={"start"}

@@ -170,16 +170,17 @@ const Navbar = () => {
 
   // className="bg-[#fff] sticky top-0 z-50"
   return (
-    <div className={`${scrolled ? "bg-[#fff]" : "bg-transparent"} sticky top-0 z-50`}>
-      <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18 lg:px-4">
-        <div className="relative flex items-center h-[100px] gap-10">
+    <div>
+      <div className={`${scrolled ? "bg-[#fff]" : "bg-transparent"} fixed top-0 left-0 right-0  z-10 flex items-center`}>
+      <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18">
+        <div className="relative flex items-center h-[85px] gap-10">
 
           <Link
             to="/"
 
             className="inline-flex items-center mx-auto sm:mx-0"
           >
-            <img className="w-60 h-[90px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
+            <img className="w-48 h-[65px]" src={"https://allstaracademy.netlify.app/static/media/logo.0d27b2af3063b53fcc5c.webp"} alt="" />
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {menuItems}
@@ -243,18 +244,21 @@ const Navbar = () => {
                     </ul>
                   </nav>
                 </div>
-                <div className="absolute top-2 right-20 sm:top-2 sm:right-0">
+                <div className="absolute top-2 lg:right-48 sm:top-2 sm:right-0 lg:left-8">
                   <SearchBar />
                 </div>
               </div>
             )}
           </div>
         </div>
-      </div>
-      <div className="absolute top-4 right-0 hidden sm:block">
+      
+        <div className="absolute lg:top-4 lg:right-32 hidden sm:block">
         <SearchBar />
       </div>
-    </div >
+      </div>
+     
+      </div >
+    </div>
   );
 };
 
