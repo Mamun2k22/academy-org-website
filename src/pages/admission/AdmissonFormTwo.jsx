@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "../contact/contact";
 import { useForm } from "react-hook-form";
 import { Country } from "country-state-city";
+import { useSelector } from "react-redux";
+import axios from "axios";
 
 
 const selectStyles = {
@@ -30,24 +32,43 @@ const AdmissionFormTwo = () => {
     formState: { errors },
     reset
   } = useForm();
-  
-  const handleSignUp = async (data) => {
-    const guardianForm = {
-      
-       firstName,
-       lastName,
-       email,
-       phoneNo,
-       address,
-       streetAddress,
-       addressLine2,
-       city,
-       region,
-       postalCode,
-       country
-    } 
 
-  }; 
+  const { student } = useSelector((state) => state.admission)
+  console.log({ student })
+
+  const handleSignUp = async (data) => {
+
+    const admissionInfo = {
+      student,
+      guardian: {
+        name: {
+          firstName: data.firstName,
+          lastName: data.lastName,
+        },
+        email: data.email,
+        confirmEmail: data.confirmEmail,
+        phoneNo: data.phoneNo,
+        address: data.address,
+        streetAddress: data.streetAddress,
+        addressLine2: data.addressLine2,
+        city: data.city,
+        region: data.region,
+        postalCode: data.postalCode,
+        country: data.country,
+        opinion: data.opinion
+      }
+    }
+
+    console.log(admissionInfo)
+    try {
+      const response = await axios.post('https://academic-backend.vercel.app/api/v1/admission/create-admission', admissionInfo)
+      console.log(response.data)
+    } catch (error) {
+      console.log(error)
+    }
+
+    reset()
+  };
 
   return (
     <div className="my-20 lg:w-7/12 mx-auto px-10">
@@ -73,21 +94,18 @@ const AdmissionFormTwo = () => {
         <div className="md:flex justify-between gap-x-5">
           <div className="w-full">
             <input
-            {...register("firstName")}
+
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("firstName")}
             />
             <h2 className="my-1">First</h2>
           </div>
           <div className="w-full">
             <input
-            {...register("lastName")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("lastName")}
             />
             <h2 className="my-1">Last</h2>
           </div>
@@ -97,21 +115,17 @@ const AdmissionFormTwo = () => {
         <div className="md:flex justify-between gap-x-5">
           <div className="w-full">
             <input
-            {...register("email")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("email")}
             />
             <h2 className="my-1">Enter Email</h2>
           </div>
           <div className="w-full">
             <input
-            {...register("confirmEmail")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("confirmEmail")}
             />
             <h2 className="my-1">Confirm Email</h2>
           </div>
@@ -122,11 +136,9 @@ const AdmissionFormTwo = () => {
             <h2 className="pt-5 pb-2">Phone</h2>
 
             <input
-            {...register("phoneNo")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("phoneNo")}
             />
           </div>
         </div>
@@ -135,11 +147,9 @@ const AdmissionFormTwo = () => {
             <h2 className="pt-5 pb-2">Address</h2>
 
             <input
-            {...register("address")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("address")}
             />
           </div>
         </div>
@@ -148,11 +158,9 @@ const AdmissionFormTwo = () => {
             <h2 className="pt-5 pb-2">Street Address</h2>
 
             <input
-             {...register("streetAddress")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("streetAddress")}
             />
           </div>
         </div>
@@ -160,21 +168,17 @@ const AdmissionFormTwo = () => {
         <div className="md:flex justify-between gap-x-5">
           <div className="w-full">
             <input
-            {...register("city")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("city")}
             />
             <h2 className="my-1">City</h2>
           </div>
           <div className="w-full">
             <input
-             {...register("region")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("region")}
             />
             <h2 className="my-1">State / Province / Region</h2>
           </div>
@@ -183,32 +187,27 @@ const AdmissionFormTwo = () => {
         <div className="md:flex justify-between gap-x-5">
           <div className="w-full">
             <input
-                {...register("postalCode")}
               className="py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("postalCode")}
             />
             <h2 className="my-1">ZIP / Postal Code</h2>
           </div>
           <div className="w-full lg:mt-2">
-          <select
-                    {...register("country")}
-                  
-                      id="country"
-                      name="country"
-                      className="hover:border-none"
-                    >
-                      <option defaultChecked>Choose a country</option>
-                      {allCountry.map((country, index) => {
-                        return (
-                          <option key={index} value={country.name}>
-                            {country.name}
-                          </option>
-                        );
-                      })}
-                    </select>
-           
+            <select
+              className="hover:border-none"
+              {...register("country")}
+            >
+              <option defaultChecked>Choose a country</option>
+              {allCountry.map((country, index) => {
+                return (
+                  <option key={index} value={country.name}>
+                    {country.name}
+                  </option>
+                );
+              })}
+            </select>
+
           </div>
         </div>
         <h2 className="pt-5 pb-2">
@@ -221,13 +220,12 @@ const AdmissionFormTwo = () => {
             <textarea
               className="h-40 py-2 bg-gray-100 rounded focus-border w-full"
               type="text"
-              name=""
-              id=""
+              {...register("opinion")}
             ></textarea>
             <div className="flex gap-x-5 mt-10">
               <Link to={'/apply'}>
                 <button>Previous</button></Link>
-              <button className="bg-[#FF4041] text-white font-medium py-3 px-5 rounded-full">
+              <button type="submit" className="bg-[#FF4041] text-white font-medium py-3 px-5 rounded-full">
                 Submit
               </button>
             </div>

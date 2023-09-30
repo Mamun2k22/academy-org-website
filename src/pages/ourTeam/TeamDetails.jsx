@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import right from '../../assets/images/right.png'
 
 const TeamDetails = () => {
@@ -47,8 +47,6 @@ const TeamDetails = () => {
                 <p className="mb-3 text-lg lg:text-4xl font-bold italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{profile?.teamMember?.name}</p>
               </div>
             </div>
-
-
           ))}
         </div>
       }
@@ -59,7 +57,3 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
-
-
-
-
