@@ -50,7 +50,7 @@ const Navbar = () => {
         onMouseLeave={toggleAboutDropdown}
       >
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/academics"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -60,7 +60,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/about-us"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -69,7 +69,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/our-team"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -82,7 +82,7 @@ const Navbar = () => {
         onMouseLeave={toggleAfterDropdown}
       >
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/event"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -98,7 +98,7 @@ const Navbar = () => {
         onMouseEnter={toggleMoreDropdown}
         onMouseLeave={toggleMoreDropdown}
       >
-        <span className="hover:text-[#73C780] text-[14px] cursor-pointer">
+        <span className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 cursor-pointer">
           PARENTS
         </span>
         {showMoreDropdown && (
@@ -107,7 +107,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   activeClassName="active"
-                  className="hover:text-[#73C780] text-[14px] "
+                  className="hover:text-[#73C780] text-[14px]"
                   to="/lunch-program"
                 >
                   School Lunch Program
@@ -131,7 +131,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/contact-us"
           rel="noreferrer"
         >
@@ -139,28 +139,39 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-[#73C780] text-[14px]"
-          href="https://www.facebook.com/libertylaunchacademy"
-        >
-          <img className="h-6 w-6" src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="" srcset="" />
-        </a>
-      </li>
-      <li>
-        <a
-          className="hover:text-[#73C780] text-[14px]"
-          href="https://www.instagram.com/liberty_launch_academy/"
-        >
-          <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="" srcset="" />
-        </a>
-      </li>
+  <a
+    className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 relative"
+    href="https://www.facebook.com/libertylaunchacademy"
+  >
+    <img
+      className="h-6 w-6 transition-transform transform scale-100 hover:scale-110"
+      src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png"
+      alt=""
+      srcSet=""
+    />
+  </a>
+</li>
+<li>
+  <a
+    className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300 relative"
+    href="https://www.instagram.com/liberty_launch_academy/"
+  >
+    <img
+      className="h-5 w-5 transition-transform transform scale-100 hover:scale-110"
+      src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"
+      alt=""
+      srcSet=""
+    />
+  </a>
+</li>
+
       <li>
         <NavLink
-          className="hover:text-[#73C780] text-[14px]"
+          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
           to="/admission"
 
         >
-          <button className="bg-red-500 lg:text-lg text-white py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
+          <button className=" justify-items-center bg-red-500 lg:text-lg text-white  py-2 px-6 rounded-3xl hover:bg-teal-accent-500">
             Admissions
           </button>
         </NavLink>
@@ -252,7 +263,7 @@ const Navbar = () => {
           </div>
         </div>
       
-        <div className="absolute lg:top-4 lg:right-32 hidden sm:block">
+        <div className="absolute lg:top-4 lg:right-32 hidden sm:block ">
         <SearchBar />
       </div>
       </div>
