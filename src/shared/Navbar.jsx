@@ -107,7 +107,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 activeClassName="active"
-                className="hover:text-[#73C780] text-[14px] px-5 py-3 block text-left"
+                className="hover:text-[#73C780] text-[14px] px-5 py-3 block text-stone-800 text-left"
                 to="/lunch-program"
               >
                 School Lunch Program
@@ -117,7 +117,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 activeClassName="active"
-                className="hover:text-[#73C780] text-[14px] px-5 block"
+                className="hover:text-[#73C780] text-[14px] px-5 block text-stone-800"
                 to="/contact-us"
               >
                 School Supply List 23-24
@@ -180,7 +180,7 @@ const Navbar = () => {
   // className="bg-[#fff] sticky top-0 z-50"
   return (
     <div>
-      <div className={`${scrolled ? "bg-[#fff]" : "bg-transparent"} fixed top-0 left-0 right-0  z-10 flex items-center`}>
+      <div className={`${scrolled ? "bg-[#fff] text-stone-800" : "bg-transparent"} fixed top-0 left-0 right-0  z-10 flex items-center text-white`}>
       <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18">
         <div className="relative flex items-center h-[85px] gap-10">
 
