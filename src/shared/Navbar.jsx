@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import SearchBar from "../components/searchBar";
 import { useEffect } from "react";
 
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [showAfterDropdown, setShowAfterDropdown] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   console.log(scrolled)
 
@@ -102,7 +103,7 @@ const Navbar = () => {
           PARENTS
         </span>
         {showMoreDropdown && (
-          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:my-5">
+          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:mt-[2px]">
           <ul className="">
             <li>
               <NavLink
@@ -165,7 +166,7 @@ const Navbar = () => {
 
       <li>
         <NavLink
-          className="text-[14px] border-b-[3px] border-transparent hover:border-[#dd3939] transition-all duration-300"
+          className="text-[14px] border-b-[3px] border-transparent transition-all duration-300"
           to="/admission"
 
         >
@@ -180,7 +181,7 @@ const Navbar = () => {
   // className="bg-[#fff] sticky top-0 z-50"
   return (
     <div>
-      <div className={`${scrolled ? "bg-[#fff] text-stone-800" : "bg-transparent"} fixed top-0 left-0 right-0  z-10 flex items-center text-white`}>
+      <div className={`${scrolled ? "bg-[#fff] lg:text-black" : "bg-transparent"} ${location.pathname.includes('academics') || location.pathname.includes('about-us') ? 'text-white': 'text-stone-900'} fixed top-0 left-0 right-0  z-10 flex items-center text-white`}>
       <div className="px-4 mx-auto max-w-full md:max-w-full lg:max-w-screen-xl md:px-18">
         <div className="relative flex items-center h-[85px] gap-10">
 
