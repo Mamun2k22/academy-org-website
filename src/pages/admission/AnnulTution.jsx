@@ -5,8 +5,8 @@ import Toggle from './Toggle';
 const AnnulTution = () => {
    
     return (
-        <div className='flex justify-between'>
-
+       <div className=''>
+         <div className='flex justify-between'>
           <div className="flex lg:my-0 lg:w-8/12">
             <div className="text-gray-800 flex items-center mx-8 lg:mx-20 lg:mt-6">
               <div className="lg:10/12">
@@ -31,6 +31,8 @@ const AnnulTution = () => {
           <Toggle></Toggle>
           </div>
         </div>
+        <p className='justify-center text-center lg:w-8/12 mx-96 lg:mt-10 px-36 font-normal text-xl'>NOTE: Multi-Child discounts are calculated based on total number of children currently attending Liberty Launch Academy in any grade.</p>
+       </div>
     );
 };
 
