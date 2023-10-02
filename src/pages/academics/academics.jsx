@@ -3,7 +3,7 @@ import SocialConnect from "../../components/academicComponents/socialConnect";
 
 const Academics = () => {
   return (
-    <div>
+    <div className="lg:my-20">
       <div id="academics" className="py-12 bg-[#1d3767] px-4 md:px-18 lg:px-12 ">
         <div className="space-y-6 ">
           <div>

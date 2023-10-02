@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div id="about-us">
       <div
-        className="bg-cover bg-center h-screen my-2 lg:my-0 relative bg-fixed"
+        className="bg-cover bg-center h-screen my-2 lg:my-20 relative bg-fixed"
         style={{
           backgroundImage:
             'url("https://libertylaunchacademy.org/wp-content/uploads/2023/07/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-IG-22-900x604.jpeg")',
