@@ -20,7 +20,7 @@ const AdmissionPage = () => {
         lastName: data.lastName
       },
       birthday: data.birthday,
-      currentGrade: data.currentGrade,
+      currentGrade: Number(data.currentGrade),
       gender: data.gender,
       disabilities: isChecked === "yes" ? true : false
     }
@@ -90,7 +90,7 @@ const AdmissionPage = () => {
             </h2>
             <input
               className="py-2 bg-gray-100 rounded focus-border w-full"
-              type="text"
+              type="number"
               {...register("currentGrade", { required: { value: true, message: "grade is required" } })}
             />
             {errors.currentGrad?.type === 'required' && <p className="text-red-500 text-xs italic">{errors.currentGrade.message}</p>}
