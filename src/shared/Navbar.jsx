@@ -98,7 +98,7 @@ const Navbar = () => {
           PARENTS
         </span>
         {showMoreDropdown && (
-          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:my-5">
+          <div className="absolute z-10 bg-white w-52 py-4 shadow-md rounded-md lg:[1px]">
             <ul className="">
               <li>
                 <NavLink
