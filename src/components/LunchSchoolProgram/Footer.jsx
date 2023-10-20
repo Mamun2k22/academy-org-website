@@ -23,7 +23,7 @@ const Footer = () => {
             <BiLogoFacebook className="h-12 w-12 border-2 border-gray-500 hover:border-white p-2 rounded-full"></BiLogoFacebook>
             <AiFillInstagram className="h-12 w-12 border-2 border-gray-500 hover:border-white p-2 rounded-full  "></AiFillInstagram>
           </div>
-          <p className="text-center pb-20">© 2023 Liberty Launch Academy - K-12 Private School.</p>
+          <p className="text-center pb-20">© 2023 All Start Academy - K-12 Private School.</p>
         </div>
       </div>
     </section>

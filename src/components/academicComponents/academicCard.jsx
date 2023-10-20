@@ -114,7 +114,7 @@ const AcademicCard = () => {
             >
               To learn more or to start the application process click below!
             </p>
-            <button className="bg-[#ff4041] text-white rounded-full py-2 px-6">
+            <button className="bg-red-500 bg-gradient-to-r from-red-600 via-red-500 to-yellow-600 hover:from-yellow-600 hover:via-red-600 hover:to-red-600 text-white rounded-full py-2 px-6">
               Application Details
             </button>
           </div>

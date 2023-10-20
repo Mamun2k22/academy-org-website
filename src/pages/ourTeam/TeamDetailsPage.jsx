@@ -20,9 +20,9 @@ const TeamDetailsPage = () => {
   }, [])
 
   return (
-    <div className="flex gap-0">
+    <div className="flex gap-0 lg:my-24">
       {/* Column 1: Title and Description */}
-      <div className="w-1/2 p-4 lg:w-6/12 lg:px-36 text-left bg-gray-50 lg:py-28">
+      <div className="w-1/2 p-4 lg:w-7/12 lg:px-36 text-left bg-gray-50 lg:py-28">
         <h2 className="text-black lg:text-5xl text-4xl font-bold ">{profileData?.teamMember?.name}</h2>
         <p className="mt-2 lg:text-xl text-lg font-serif">{profileData?.teamMember?.bio}</p>
       </div>
@@ -32,7 +32,7 @@ const TeamDetailsPage = () => {
         <img
           src={profileData?.teamMember?.image}
           alt="Image Description"
-          className="w-full h-full transition duration-300 ease-in-out hover:scale-110"
+          className="w-full h-auto transition duration-300 ease-in-out hover:scale-110"
         />
       </div>
     </div>

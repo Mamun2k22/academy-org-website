@@ -17,7 +17,7 @@ const LunchSchoolProgram = () => {
           WELCOME TO BOONLI!
         </h1>
         <p className=" px-10 text-2xl text-gray-600">
-          Liberty Launch Academy has partnered with BOONLI to provide a secure,
+          All Start Academy has partnered with BOONLI to provide a secure,
           fast, and easy-to-use online ordering platform that allows you to view
           our menu, order, and pay from your smartphone, tablet, or computer.
         </p>

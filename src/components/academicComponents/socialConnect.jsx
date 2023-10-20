@@ -5,6 +5,7 @@ import article3 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchoo
 import article4 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-grades9-12-01-600x403.jpg";
 import article5 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-Littles-Launch-Academy-06-600x403.jpg";
 import article6 from "../../assets/images/LibertyLaunchAcademy_K-12_PrivateSchool-LibertyLake-WA-IG-22-600x403.jpeg";
+import logod from '../../../src/assets/logod.jpg'
 import Modal from "react-modal";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -78,20 +79,20 @@ const SocialConnect = () => {
     <div className="py-12 relative">
       <div className="text-center mx-auto w-11/12 sm:w-2/3">
         <h2 className="text-xl sm:text-2xl font-bold">Let’s Get Social!</h2>
-        <i className="text-xl sm:text-2xl text-[#444444] pt-6">
+        <span className="text-lg sm:text-xl font-poppins  pt-6">
           Join our family at All Star Academy! Follow us on Instagram and
           Facebook to keep pace with our vibrant learning community, and
           discover the exciting events and enriching activities we offer for
           your children.
-        </i>
+        </span>
         <div className="flex justify-center items-center space-x-4">
           <a
             href="https://www.instagram.com/liberty_launch_academy"
             target="_blank"
           >
             <img
-              className="w-16 h-16 border border-[#cc3b92] rounded-full hover:cursor-pointer"
-              src="https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Finstagram.fwaw3-2.fna.fbcdn.net%2Fv%2Ft51.2885-19%2F280416801_981118475882068_225830004202324760_n.jpg%3Fstp%3Ddst-jpg_s150x150%26_nc_ht%3Dinstagram.fwaw3-2.fna.fbcdn.net%26_nc_cat%3D104%26_nc_ohc%3DotoL9imHXaMAX_wzQ2k%26edm%3DAKEQFekBAAAA%26ccb%3D7-5%26oh%3D00_AfBgB2BVlmFeK5cE_DV5NGrZWtTTVxcOxRAZlGOlRuWLwg%26oe%3D65066DA6%26_nc_sid%3D29ddf3"
+              className="w-auto h-16  hover:cursor-pointer"
+              src={logod}
               alt="logo"
             />
           </a>

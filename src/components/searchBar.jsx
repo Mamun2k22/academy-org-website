@@ -15,7 +15,7 @@ function SearchBar() {
             <div className="">
                 <CiSearch
                     onClick={() => setShowSearchBar(!showSearchBar)}
-                    className="px-4 text-black text-6xl rounded focus:outline-none"
+                    className="px-4 text-black text-[56px] rounded focus:outline-none"
                 />
             </div>
             <div className="p-4">{/* Your content goes here */}</div>

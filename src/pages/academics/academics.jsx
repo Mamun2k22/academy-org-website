@@ -21,7 +21,7 @@ const Academics = () => {
               data-aos-duration="2000"
               className="text-2xl font-bold text-white"
             >
-              For the exceptional
+              Academics
             </h3>
           </div>
           <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">

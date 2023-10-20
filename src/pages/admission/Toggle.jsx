@@ -3,10 +3,10 @@ import { useState } from "react";
 const Toggle = () => {
    
   return (
-    <div className="lg:my-10">
+    <div className="lg:my-10 lg:mx-0 mx-8 mt-12">
       <div class="hs-accordion-group">
-          <div class="hs-accordion active lg:w-10/12 " id="hs-basic-heading-one">
-            <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-80 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-one">
+          <div class="hs-accordion active lg:w-11/12 " id="hs-basic-heading-one">
+            <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center lg:gap-x-80 gap-x-[100px] w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-one">
             <h1 className="text-3xl font-sans font-extrabold  ">PRESCHOOL</h1>
             <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-6 h-6 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           
@@ -37,8 +37,8 @@ const Toggle = () => {
             </div>
           </div>
 
-        <div class="hs-accordion lg:w-10/12" id="hs-basic-heading-two">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-[260px] w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-two">
+        <div class="hs-accordion lg:w-11/12" id="hs-basic-heading-two">
+          <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center lg:gap-x-[260px] gap-x-[40px] w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-two">
           <h1 className="text-3xl font-sans font-extrabold ">KINDERGARTEN</h1>
           <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-6 h-6 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         
@@ -71,9 +71,9 @@ const Toggle = () => {
           </div>
         </div>
 
-        <div class="hs-accordion lg:w-10/12" id="hs-basic-heading-two">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-[270px] w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-two">
-          <h1 className="text-3xl font-sans font-extrabold ">1st - 9th Grades</h1>
+        <div class="hs-accordion lg:w-11/12" id="hs-basic-heading-two">
+          <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center lg:gap-x-[270px] gap-x-[50px] w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-two">
+          <h1 className="lg:text-3xl text-3xl font-sans font-extrabold ">1st - 9th Grades</h1>
           <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-6 h-6 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         
         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />

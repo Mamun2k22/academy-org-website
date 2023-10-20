@@ -104,7 +104,7 @@ const ContactPage = () => {
             rows="5"
             className="py-2 bg-gray-100 rounded focus-border w-full mt-1"
           ></textarea>
-          <button className="mt-6 bg-[#FF4041] px-6 py-3 rounded-full text-white">
+          <button className="mt-6 bg-gradient-to-r from-red-600 via-red-500 to-yellow-600 hover:from-yellow-600 hover:via-red-600 hover:to-red-600 px-6 py-3 rounded-full text-white">
           Submit
         </button>
         </div>

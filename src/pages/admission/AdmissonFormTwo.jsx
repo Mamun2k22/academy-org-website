@@ -212,7 +212,7 @@ const AdmissionFormTwo = () => {
         </div>
         <h2 className="pt-5 pb-2">
           {" "}
-          Why are you interested in having your student attend Liberty Launch
+          Why are you interested in having your student attend All Start
           Academy? <span className="text-[#FF4041]">(Required)</span>{" "}
         </h2>
         <div className="md:flex justify-between gap-x-5">
